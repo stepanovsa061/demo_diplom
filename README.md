@@ -123,7 +123,7 @@ worker-2   Ready    <none>          7h41m   v1.33.2
 2. Регистри с собранным docker image. В качестве регистри может быть DockerHub или Yandex Container Registry, созданный также с помощью terraform.
 
 # Решение
-
+Dockerfile:
 
 ```
 FROM nginx:latest
@@ -138,7 +138,7 @@ HEALTHCHECK --interval=30s --timeout=10s --retries=3 CMD curl -f http://localhos
 
 EXPOSE 80
 ```
-
+Также создаём файл ~/test_app/conf/nginx.conf с конфигурацией:
 ```
 user nginx;
 worker_processes 1;
@@ -161,7 +161,7 @@ http {
     }
     keepalive_timeout  60;
 ```
-
+Cоздаём статическую страницу приложения:
 ```
 <!DOCTYPE html>
 <html lang="ru">
