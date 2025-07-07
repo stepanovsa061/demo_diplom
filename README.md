@@ -202,7 +202,7 @@ step@step-diplom:~/test_app_diplom$
 docker pull stepserg/nginx-app
 ```
 
-Для размещения приложения выбран GitHub: 
+Для размещения приложения выбран GitHub: https://github.com/stepanovsa061/test_app_diplom
 
 # Подготовка cистемы мониторинга и деплой приложения
 Уже должны быть готовы конфигурации для автоматического создания облачной инфраструктуры и поднятия Kubernetes кластера.
